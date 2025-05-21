@@ -3,15 +3,17 @@ function validate() {
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const subject = document.getElementById("subject").value;
-
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const terms = document.getElementById("terms").checked;
   console.log("phone", typeof phone);
 
-  if (name.trim() === " ") {
+  if (name.trim() === "") {
     showError("Name cannot be empty");
     return false;
   }
 
-  if (email.trim() === " ") {
+  if (email.trim() === "") {
     showError("Email cannor be empty");
     return false;
   }
@@ -25,7 +27,20 @@ function validate() {
     showError("Please provide your expirtise");
     return false;
   }
-
+  if (password.trim() === "" || password.length !== 8) {
+    showError("Please enter an 8-character password");
+    return false;
+  }
+  if (confirmPassword !== password) {
+    showError("Passwords do not match");
+    return false;
+  }
+  if (terms === false) {
+    showError("terms and conditions is not selected");
+    return false;
+  }
+  alert("registration successful");
+  return true;
   function showError(message) {
     const errorElement = document.getElementById("demo");
     errorElement.style.color = "red";
