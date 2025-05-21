@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
+    <!-- Link to your CSS file for styling -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Main container to hold everything -->
     <div class="container">
+      <!-- Big heading at the top -->
       <h1>USER REGISTRATION</h1>
+
+      <!-- Start of the form -->
+      <!-- When the form is submitted, it will run a function called "validate()" -->
       <form action="" name="myForm" onsubmit="return validate();">
+        <!-- Label and input for name -->
         <label for="name">Name</label>
         <input type="text" id="name" />
 
+        <!-- Label and input for email -->
         <label for="email">E-mail</label>
         <input type="text" id="email" />
 
+        <!-- Label and input for phone number -->
         <label for="phone">Phone Number</label>
         <input type="text" id="phone" />
 
+        <!-- Dropdown to choose a subject -->
         <label for="subject">Subject</label>
         <select id="subject">
           <option value="0" selected>Select</option>
@@ -28,21 +39,29 @@
           <option value="4">JSP</option>
         </select>
 
+        <!-- Password input -->
         <label for="password">Password</label>
         <input type="password" id="password" />
 
+        <!-- Confirm password input -->
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" id="confirmPassword" />
 
+        <!-- Checkbox for agreeing to terms -->
         <label for="terms">
           <input type="checkbox" id="terms" /> I agree to the
           <a href="#">terms and condition</a>
         </label>
 
+        <!-- A paragraph to show messages (like errors) -->
         <p id="demo"></p>
+
+        <!-- Button to submit the form -->
         <input type="submit" value="Submit" />
       </form>
     </div>
+
+    <!-- This links your JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -5,75 +5,86 @@ body {
   padding: 0;
 }
 
+/* Style for the container box */
 .container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  margin-top: 50px;
+  max-width: 400px; /* Maximum width of the form */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Space inside the container */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Soft shadow around the box */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 50px; /* Space from the top of the page */
 }
 
+/* Style for the main heading */
 h1 {
-  text-align: center;
-  color: #007bff;
+  text-align: center; /* Center the heading text */
+  color: #007bff; /* Blue color */
 }
 
+/* Style for the whole form */
 form {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
 }
 
+/* Style for all labels */
 label {
-  font-weight: bold;
-  margin-top: 6px;
+  font-weight: bold; /* Make label text bold */
+  margin-top: 6px; /* Space above each label */
 }
 
+/* Style for text, email, and select inputs */
 input[type="email"],
 input[type="text"],
 select {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px; /* Space inside the input box */
+  margin-bottom: 10px; /* Space below the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
 }
 
+/* Remove default arrow from dropdown (select) */
 select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
+/* Style for submit button */
 input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Space inside the button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Mouse pointer changes on hover */
+  font-size: 16px; /* Slightly bigger text */
 }
 
+/* Submit button hover effect */
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue when mouse is over */
 }
 
+/* Style for the error message paragraph */
 #demo {
-  color: red;
-  text-align: center;
-  margin-top: 10px;
+  color: red; /* Red text for error message */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space above the message */
 }
 
+/* Style for password labels */
 label[for="password"],
 label[for="confirmPassword"] {
-  display: block;
-  margin-top: 10px;
+  display: block; /* Make them show on a new line */
+  margin-top: 10px; /* Space above */
 }
 
+/* Style for password inputs */
 input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%; /* Full width of the container */
+  padding: 10px; /* Inside space */
+  margin: 5px 0; /* Space top and bottom */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
 }
