@@ -93,7 +93,7 @@ let math = 80;
 let science = 75;
 let english = 85;
 
-//2. find total and average
+////2. find total and average
 let total = math + science + english;
 let average = total / 3;
 

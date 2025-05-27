@@ -42,12 +42,19 @@
 //
 //
 //
-//4.fourth example for fetch:
+// 4. Fourth example for fetch:
+
+// Use fetch to get data from an API (dummy JSON data of products)
 fetch("https://dummyjson.com/products")
+  // When the response comes back, convert it to JSON format
   .then((response) => response.json())
+
+  // Once the data is converted, do something with it (like print it)
   .then((data) => {
-    console.log(data);
+    console.log(data); // Show the whole product data in the console
   })
+
+  // If there is any error (like internet issue), catch and print it
   .catch((error) => {
-    console.log(error);
+    console.log(error); // Show error in console
   });

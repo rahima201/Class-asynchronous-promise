@@ -22,28 +22,46 @@
 
 //. second example for promise
 
-//make a promise
-const myPromise = new Promise((resolve, reject) => {
-  let success = true; //change to false to test error
+// //make a promise
+// const myPromise = new Promise((resolve, reject) => {
+//   let success = true; //change to false to test error
+
+//   if (success) {
+//     resolve("success"); //when done
+//   } else {
+//     reject("failed"); //when error
+//   }
+// });
+
+// //use the promise
+// myPromise
+//   .then((msg) => {
+//     console.log(msg); //show if success
+//   })
+//   .catch((err) => {
+//     console.log(err); //show if error
+//   });
+
+//
+
+//
+
+//// Create a new Promise
+const myPromise = new Promise(function (resolve, reject) {
+  let success = true; // change this to false to see the reject case
 
   if (success) {
-    resolve("success"); //when done
+    resolve("Promise resolved successfully!"); // when everything is okay
   } else {
-    reject("failed"); //when error
+    reject("Promise rejected with an error."); // if something went wrong
   }
 });
 
-//use the promise
+// Use the promise and handle success and error
 myPromise
-  .then((msg) => {
-    console.log(msg); //show if success
+  .then(function (message) {
+    console.log("Success:", message); // runs if promise is resolved
   })
-  .catch((err) => {
-    console.log(err); //show if error
+  .catch(function (error) {
+    console.log("Error:", error); // runs if promise is rejected
   });
-
-//
-
-//
-
-//

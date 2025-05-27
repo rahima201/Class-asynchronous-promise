@@ -1,12 +1,13 @@
-const button = document.getElementById("btn");
+//1
+// This function says hello first, then runs another function (a callback)
+function sayHello(callback) {
+  console.log("Hi, I'm learning JavaScript!"); // First message
 
-button.addEventListener("class", function () {});
-
-function calculator(num1, callBack) {
-  return num1 + callBack();
+  callback(); // Now run the callback function
 }
 
-const res = calculator(10, function () {
-  return 20;
+// Call the sayHello function
+// Give it another function (the callback) that shows a second message
+sayHello(function () {
+  console.log("This is a callback function."); // Second message
 });
-console.log(res);

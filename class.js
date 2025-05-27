@@ -69,17 +69,26 @@ shohaibCar.stopEngine();
 //
 
 //3. class
+// Create a class named 'Person'
 class Person {
+  // The constructor runs when a new object is created from this class
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    this.name = name; // Set the 'name' property of the object
+    this.age = age; // Set the 'age' property of the object
   }
+
+  // A method named 'greet' that prints a message using name and age
   greet() {
     console.log(`hello my name is ${this.name} and my age is ${this.age}`);
   }
 }
+
+// Create a new object from the Person class
+// Give it the name "Rahima" and age 24
 const person2 = new Person("Rahima", 24);
 
-person2.greet();
+// Call the greet() method of the person2 object
+person2.greet(); // Output: hello my name is Rahima and my age is 24
 
-console.log(person2);
+// Print the full object to see its properties
+console.log(person2); // Output: Person { name: 'Rahima', age: 24 }
